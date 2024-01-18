@@ -1,7 +1,9 @@
 package fj;
 
-public class imprimir {
-    public static void imprimirJuguetes() {
+import java.util.List;
+
+public class Imprimir {
+    public static void imprimirJuguetes(List<Juguete> lista) {
         for (Juguete juguete : lista) {
             if (juguete instanceof Peluche) {
                 imprimirPeluche((Peluche) juguete);
