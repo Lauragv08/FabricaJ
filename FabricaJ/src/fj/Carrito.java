@@ -1,28 +1,28 @@
 package fj;
 
-public class Peluche extends Juguete {
-    private String materialExterior;
-    private String relleno;
+public class Carrito extends Juguete {
+    private String marca;
+    private int numeroPuertas;
 
-    public Peluche(String color, String materialExterior, String relleno) {
+    public Carrito(String color, int numeroPuertas, String marca) {
         super(color);
-        this.materialExterior = materialExterior;
-        this.relleno = relleno;
+        this.marca = marca;
+        this.numeroPuertas = numeroPuertas;
     }
 
-    public String getMaterialExterior() {
-        return materialExterior;
+    public String getMarca() {
+        return marca;
     }
 
-    public void setMaterialExterior(String materialExterior) {
-        this.materialExterior = materialExterior;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public String getRelleno() {
-        return relleno;
+    public int getNumeroPuertas() {
+        return numeroPuertas;
     }
 
-    public void setRelleno(String relleno) {
-        this.relleno = relleno;
+    public void setNumeroPuertas(int numeroPuertas) {
+        this.numeroPuertas = numeroPuertas;
     }
 }

@@ -1,10 +1,10 @@
+package fj;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
-import static fj.imprimir.imprimirJuguetes;
-
+import static fj.Imprimir.imprimirJuguetes;
 
 public class Principal {
 
@@ -22,7 +22,7 @@ public class Principal {
             System.out.println("3: Mostrar lista");
             System.out.println("4: Salir");
             op = leer.nextInt();
-
+            // Patrón de diseño Strategy
             if (op == 1) {
                 System.out.println("Material exterior: ");
                 String material = leer.next();
@@ -42,7 +42,7 @@ public class Principal {
                 juguetes.add(new Carrito(coloresCarrito, numeroPuertas, marca));
                 System.out.println("El juguete fue añadido a la lista");
             } else if (op == 3) {
-                imprimirJuguetes();
+                imprimirJuguetes(juguetes);
             } else if (op == 4) {
                 System.out.println("El programa ha sido cerrado");
             } else {
